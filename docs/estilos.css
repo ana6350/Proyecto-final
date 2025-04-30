@@ -1,1 +1,3 @@
-#map { height: 180px; }
+#map { width: 100%; 
+    height: 600px;
+}
