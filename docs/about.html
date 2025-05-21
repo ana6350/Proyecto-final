@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de...</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos-about.css">
 </head>
 <body>
     <header>
@@ -13,7 +13,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="description.html">Descripción</a></li>
+                <li><a href="descripcion.html">Descripción</a></li>
                 <li><a href="autor.html">Autor</a></li>
             </ul>
         </nav>
@@ -22,8 +22,11 @@
         <section>
             <div class="text-map">
                 <div class="text">
-                    <h2>Información del Proyecto</h2>
-                    <p>Este proyecto tiene como objetivo analizar el uso inadecuado de los contenedores de residuos...</p>
+                    <h2>Análisis del uso inadecuado de contenedores de residuos en Bogotá D.C. - Localidad de Suba, Barrio Los Nogales de Tibabuyes II</h2>
+                    <p>Este proyecto se centra en el análisis del uso inadecuado de los contenedores de residuos en la ciudad de Bogotá D.C., 
+                        específicamente en la localidad de Suba, en el barrio Los Nogales de Tibabuyes II, comprendido entre la Carrera 129 y la Carrera 139. 
+                        El manejo inapropiado de los contenedores, especialmente por parte de los recolectores informales de materiales reutilizables,
+                        es una problemática que afecta tanto a la eficiencia del sistema de recolección de residuos como al bienestar ambiental y social de la comunidad.</p>
                 </div>
                 <div id="map"></div> <!-- Mapa con polígono -->
             </div>
@@ -32,6 +35,7 @@
     <footer>
         <p>&copy; 2025 Proyecto de Contenedores de Residuos en Bogotá D.C.</p>
     </footer>
-    <script src="programa-acerca-de.js"></script> <!-- Script específico para acerca_de.html -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> <!-- Asegúrate de incluir Leaflet -->
+    <script src="programa-about.js"></script> <!-- Script específico para acerca_de.html -->
 </body>
 </html>
