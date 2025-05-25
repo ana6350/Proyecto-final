@@ -1,4 +1,3 @@
-/* estilos.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,10 +14,12 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 15px;
 }
 
@@ -27,30 +28,50 @@ nav ul li a {
     text-decoration: none;
 }
 
-#map {
-    width: 100%;          /* Asegura que el mapa ocupe todo el ancho disponible */
-    height: 600px;        /* Asegura que el mapa tenga una altura visible */
-    border: 2px solid #ccc; /* Puedes agregar un borde opcional para que se distinga */
-    margin-top: 20px;     /* Espaciado superior para separar el mapa del contenido */
-}
-
+/* Estructura principal de texto y mapa juntos */
 .text-map {
     display: flex;
+    flex-wrap: wrap;           /* Importante para móviles */
     justify-content: space-between;
+    align-items: flex-start;
     padding: 20px;
+    gap: 20px;
 }
 
+/* Sección de texto */
 .text {
-    width: 48%;
+    flex: 1 1 50%;             /* Ajuste flexible para texto */
+    min-width: 300px;
 }
 
+/* Contenedor del mapa */
+#map {
+    flex: 1 1 45%;
+    min-width: 300px;
+    height: 500px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Para otras secciones como "autor" que tengan texto + imagen + mapa */
 .autor-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
 }
 
 .foto img {
     max-width: 100%;
     height: auto;
     width: 200px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
